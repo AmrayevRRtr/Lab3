@@ -61,20 +61,20 @@ p1.dist()
 ex5
 class Account:
     def __init__(self):
-        self.owner=str(input("Имя: "))
+        self.owner=str(input("РРјСЏ: "))
         self.balance=0
     def deposit(self):
-        self.amount=int(input("Введите сумму: "))
+        self.amount=int(input("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ: "))
         self.balance+=self.amount
-        print("Пополнение: ", self.balance, "\nДоступно:", self.balance)
+        print("РџРѕРїРѕР»РЅРµРЅРёРµ: ", self.balance, "\nР”РѕСЃС‚СѓРїРЅРѕ:", self.balance)
     def widthdrawals(self):
-        self.amount=int(input("Введите сумму для снятия: "))
+        self.amount=int(input("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ РґР»СЏ СЃРЅСЏС‚РёСЏ: "))
         if self.amount<=self.balance:
             self.balance-=self.amount
-            print("Вы успешно сняли сумму.")
-            print ("Доступно:", self.balance)
+            print("Р’С‹ СѓСЃРїРµС€РЅРѕ СЃРЅСЏР»Рё СЃСѓРјРјСѓ.")
+            print ("Р”РѕСЃС‚СѓРїРЅРѕ:", self.balance)
         else:
-            print("У вас недостаточно средств.")
+            print("РЈ РІР°СЃ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ.")
 
 p1=Account()
 p1.deposit()
